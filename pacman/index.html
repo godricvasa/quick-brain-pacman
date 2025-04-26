@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pacman Grid Game</title>
+    <style>
+      body {
+        margin: 0;
+        /* margin-bottom: 10; */
+        /* overflow: hidden; */
+        background-color: #000;
+        position: relative;
+      }
+      #gameCanvas {
+        background-color: #222;
+        display: block;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border: 3px solid white;
+      }
+      #options-container button {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #eee;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #options-container button:hover {
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="gameCanvas" width="700" height="700"></canvas>
+
+    <div
+      id="question-container"
+      style="
+        display: none;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -30%);
+        background-color: white;
+        padding: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+        text-align: center;
+        z-index: 10;
+      "
+    >
+      <p id="question-text" style="font-size: 20px; color: black"></p>
+      <div id="options-container" style="margin-top: 20px"></div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pacman Quiz Game</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game-container"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html> -->
